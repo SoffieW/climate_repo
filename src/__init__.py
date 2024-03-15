@@ -1,4 +1,4 @@
-from .data import import_data
+from .data import import_dataset
+from .data import make_dataset
 
-data.import_data("pantanjali/unemployment-dataset")
 
