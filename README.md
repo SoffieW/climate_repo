@@ -1,8 +1,7 @@
-unemployment
+Climate Analysis and Time Series Forecasting
 ==============================
 
-A mini project to learn how to use the cookiecutter data science project structure
-
+A project to investigate global temperature change and build time series forecasts using historical data and further climate variables.
 Project Organization
 ------------
 
