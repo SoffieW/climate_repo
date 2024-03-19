@@ -1,8 +1,7 @@
 Climate Analysis and Time Series Forecasting
 ==============================
 
-A project to investigate global temperature change and build time series forecasts using historical data and further climate variables.
-Project Organization
+A project to investigate global temperature change and build time series forecasts using historical data and further climate variables. 
 ------------
 
     ├── LICENSE
