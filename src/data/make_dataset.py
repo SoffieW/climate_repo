@@ -44,7 +44,7 @@ def create_time_series(df):
 
     # Sort the DataFrame by 'Year-Month'
     df_time_series = df_pivoted.sort_values('Year-Month')
-
+    df_time_series = df_time_series.dropna()
     # Return the pivoted DataFrame
     return df_time_series
 
@@ -67,7 +67,7 @@ def split_time_series(df):
 
 def interims_to_csv(df, string_name):
     interim_path = os.path.join(os.getcwd(), os.pardir,os.pardir, 'data', 'interim')
-    df.to_csv(interim_path + "\\" + string_name + '.csv')
+    df.to_csv(interim_path + "\\" + string_name + '.csv', index = False)
 
 def splits_to_csv(split_name, string_name):
     '''
@@ -75,7 +75,7 @@ def splits_to_csv(split_name, string_name):
     '''
     output_filepath = os.path.join(os.getcwd(), os.pardir,os.pardir, 'data', 'processed')
     output_filepath = output_filepath + "\\" + string_name + '.csv'
-    split_name.to_csv(output_filepath)
+    split_name.to_csv(output_filepath, index = False)
 
 def main():
     """ Runs data processing scripts to turn raw data from (../raw) into

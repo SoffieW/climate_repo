@@ -35,5 +35,5 @@ for row in data[50:]:
 table_dataframe = pd.DataFrame(table_data)
 table_dataframe.columns = data[49]
 extraction_path = os.path.join(os.getcwd(), os.pardir,os.pardir, 'data', 'external', 'elnino_lanina.csv')
-table_dataframe.to_csv(extraction_path)
+table_dataframe.to_csv(extraction_path, index = False)
 
